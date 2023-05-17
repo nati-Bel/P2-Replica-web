@@ -1,21 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
     box-sizing: border-box;
     margin: none;
-    font-family: 'Open Sans', sans-serif;}
+    font-family: 'Open Sans', sans-serif;
 
+}
+body {
+    margin-top: 0;
+    
+}
+
+p {
+    font-size:16px;
+    font-weight: 300;
+    line-height: 1.8; ;
+}
 .header {
     display:flex;
     width: 100%;
     height: 80px;
     padding: 0 35px 0 35px;
+    background-color: white;
+    position: fixed;
+    top:0;
 }
     
 .logo {
     width: 100px;
     display:inline-block;
-    ;
+    
 }
 
 .main-menu {
@@ -29,7 +43,6 @@
     
 }
 .menu {
-list-style-type: none;
 font-size: 10px;
 display:inline-block;
 
@@ -48,6 +61,7 @@ display:inline-block;
     border-color: #FF556E;
     background-color: white;
     border-radius: 20px;
+    border-style: solid;
     padding: 10px 25px 10px 25px;
     transition: all 50ms ease-in-out;
 
@@ -58,4 +72,160 @@ display:inline-block;
     background-color: #FF556E;
     cursor: pointer;
     
+}
+
+
+.welcome {
+    padding-top: 120px;
+    padding: 120px 30px 40px 30px;
+}
+
+.green-diamond-shape {
+    width: 15px;
+    
+}
+
+.yellow-circle-shape {
+    width: 25px;
+    float: right;
+    
+}
+
+#intro-text {
+    padding: 50px 200px 10px 200px;
+}
+
+.h1 {
+    display: block;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+
+}
+
+.app-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+
+}
+.logo-button {
+    display:inline-block;
+    width: 20%;
+}
+.download-button {
+    
+    font-size: 14px;
+    font-weight: bold;
+    background-color:#FF556E ;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    gap:4px;
+    
+}
+
+.blue-circle-shape {
+    width:60px;
+}
+
+.container-two-mobile {
+    padding-top:40px;
+    padding-bottom:40px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#purple-iphone {
+    width: 800px;
+    display: block;
+    object-position: center;
+}
+
+#container-functions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#situation-icon {
+    width: 80px;
+    padding: 20px;
+    background-color:#DAF4EF ;
+    border-radius: 50%;
+}
+
+#identify-icon {
+    width: 80px;
+    padding: 20px;
+    background-color:#EBE7FA ;
+    border-radius: 50%;
+}
+
+#tasks-icon {
+    width: 80px;
+    padding: 20px;
+    background-color:#F8E5EA ;
+    border-radius: 50%;
+
+}
+
+#social-icon {
+    width: 80px;
+    padding: 20px;
+    background-color:#F8F1DE ;
+    border-radius: 50%;
+
+}
+
+#get-icon {
+    width: 80px;
+    padding: 20px;
+    background-color:#E1F2FA ;
+    border-radius: 50%;
+
+}
+
+.function-item {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+#description {
+    padding:40px 0 40px 0
+}
+#container-organize-time {
+    display:flex;
+    justify-content: center;
+    background-color: #F7FAFD;
+    padding: 40px 0 40px 0
+}
+#organize-print-screens {
+    max-width: 40%;
+}
+
+#organize-text {
+    max-width:40%;
+    
+}
+
+h3 {
+    font-size: 40px;
+}
+#calendar {
+    width:200px;
+}
+
+.container-four-schedule {
+    display: flex;
 }
