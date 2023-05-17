@@ -1,231 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: none;
-    font-family: 'Open Sans', sans-serif;
-
+  box-sizing: border-box;
+  margin: none;
+  font-family: "Open Sans", sans-serif;
 }
 body {
-    margin-top: 0;
-    
+  margin-top: 0;
 }
 
 p {
-    font-size:16px;
-    font-weight: 300;
-    line-height: 1.8; ;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
 }
+
+/* styles for header  */
 .header {
-    display:flex;
-    width: 100%;
-    height: 80px;
-    padding: 0 35px 0 35px;
-    background-color: white;
-    position: fixed;
-    top:0;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 0 35px 0 35px;
+  background-color: white;
+  position: fixed;
+  top: 0;
 }
-    
+
 .logo {
-    width: 100px;
-    display:inline-block;
-    
+  width: 100px;
+  display: inline-block;
 }
 
 .main-menu {
-    width: 100%;
-    text-align: end;
-    display: inline-block;
-    padding-top:25px;
-    font-size: 14px;
-    font-weight:900;
-
-    
+  width: 100%;
+  text-align: end;
+  display: inline-block;
+  padding-top: 25px;
+  font-size: 14px;
+  font-weight: 900;
 }
 .menu {
-font-size: 10px;
-display:inline-block;
-
+  font-size: 10px;
+  display: inline-block;
 }
 
 .menu-item {
-    display: inline;
-    padding: 0 20px 0 20px;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
 .download-button-white {
-    margin: 0 20px 0 20px;
-    color: #FF556E;
-    font-size: 14px;
-    font-weight:900;
-    border-color: #FF556E;
-    background-color: white;
-    border-radius: 20px;
-    border-style: solid;
-    padding: 10px 25px 10px 25px;
-    transition: all 50ms ease-in-out;
-
+  margin: 0 20px 0 20px;
+  color: #ff556e;
+  font-size: 14px;
+  font-weight: 900;
+  border-color: #ff556e;
+  background-color: white;
+  border-radius: 20px;
+  border-style: solid;
+  padding: 10px 25px 10px 25px;
+  transition: all 50ms ease-in-out;
 }
 
 .download-button-white:hover {
-    color: white;
-    background-color: #FF556E;
-    cursor: pointer;
-    
+  color: white;
+  background-color: #ff556e;
+  cursor: pointer;
 }
 
-
+/* style for welcome page */
 .welcome {
-    padding-top: 120px;
-    padding: 120px 30px 40px 30px;
+  padding-top: 120px;
+  padding: 120px 30px 40px 30px;
 }
 
 .green-diamond-shape {
-    width: 15px;
-    
+  width: 15px;
 }
 
 .yellow-circle-shape {
-    width: 25px;
-    float: right;
-    
+  width: 25px;
+  float: right;
 }
 
 #intro-text {
-    padding: 50px 200px 10px 200px;
+  padding: 50px 200px 10px 200px;
 }
 
 .h1 {
-    display: block;
-    text-align: center;
-    font-size: 65px;
-    font-weight: bold;
-
+  display: block;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
 }
 
 .app-buttons {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 25px;
-
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
 }
 .logo-button {
-    display:inline-block;
-    width: 20%;
+  display: inline-block;
+  width: 20%;
 }
 .download-button {
-    
-    font-size: 14px;
-    font-weight: bold;
-    background-color:#FF556E ;
-    color: white;
-    border-style: none;
-    border-radius: 20px;
-    padding: 10px 25px 10px 25px;
-    gap:4px;
-    
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff556e;
+  color: white;
+  border-style: solid;
+  border-color:#ff556e;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  gap: 4px;
 }
 
 .blue-circle-shape {
-    width:60px;
+  width: 60px;
 }
 
+
 .container-two-mobile {
-    padding-top:40px;
-    padding-bottom:40px;
-    display:flex;
-    align-content: center;
-    justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 #purple-iphone {
-    width: 800px;
-    display: block;
-    object-position: center;
+  width: 800px;
+  display: block;
+  object-position: center;
 }
 
 #container-functions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #situation-icon {
-    width: 80px;
-    padding: 20px;
-    background-color:#DAF4EF ;
-    border-radius: 50%;
+  width: 80px;
+  padding: 20px;
+  background-color: #daf4ef;
+  border-radius: 50%;
 }
 
 #identify-icon {
-    width: 80px;
-    padding: 20px;
-    background-color:#EBE7FA ;
-    border-radius: 50%;
+  width: 80px;
+  padding: 20px;
+  background-color: #ebe7fa;
+  border-radius: 50%;
 }
 
 #tasks-icon {
-    width: 80px;
-    padding: 20px;
-    background-color:#F8E5EA ;
-    border-radius: 50%;
-
+  width: 80px;
+  padding: 20px;
+  background-color: #f8e5ea;
+  border-radius: 50%;
 }
 
 #social-icon {
-    width: 80px;
-    padding: 20px;
-    background-color:#F8F1DE ;
-    border-radius: 50%;
-
+  width: 80px;
+  padding: 20px;
+  background-color: #f8f1de;
+  border-radius: 50%;
 }
 
 #get-icon {
-    width: 80px;
-    padding: 20px;
-    background-color:#E1F2FA ;
-    border-radius: 50%;
-
+  width: 80px;
+  padding: 20px;
+  background-color: #e1f2fa;
+  border-radius: 50%;
 }
 
 .function-item {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
+/* style for description */
+
 #description {
-    padding:40px 0 40px 0
+  padding: 40px 0 40px 0;
 }
 #container-organize-time {
-    display:flex;
-    justify-content: center;
-    background-color: #F7FAFD;
-    padding: 40px 0 40px 0
+  display: flex;
+  justify-content: center;
+  background-color: #f7fafd;
+  padding: 80px 0 80px 0;
 }
 #organize-print-screens {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 #organize-text {
-    max-width:40%;
-    
+  max-width: 40%;
 }
 
 h3 {
-    font-size: 40px;
+  font-size: 40px;
 }
 #calendar {
-    width:200px;
+  max-width: 40%;
+  
+}
+#schedule-tasks {
+ max-width:40%;
 }
 
-.container-four-schedule {
-    display: flex;
+.container-schedule {
+  display: flex;
+  justify-content: center;
+  background-color: #E8EFF6;
+  padding: 80px 0 80px 0;
+}
+.icon-calendar {
+    width: 16%;
+}
+
+#button-schedule {
+    background-color:#9A67E7;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding:4px 5px 4px 5px;
+    text-align: center;
+}
+
+#button-tracking {
+    background-color:#F7FAFD;
+    color:#848484 ;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding:4px 5px 4px 5px;
+    text-align: center;
+}
+#button-organize {
+    background-color:#F7FAFD;
+    color:#848484 ;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding:4px 5px 4px 5px;
+    text-align: center;
+}
+
+.download-button-privacy {
+    font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #848484;
+  border-style: solid;
+  border-color:#848484 ;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  gap: 4px;
+  margin-left: 10px;
+  
+}
+
+/* style for SCREENS */
+#screens {
+    background-color: #F7FAFD;
+}
+#heading-testimonials {
+    text-align: center;
+
 }
