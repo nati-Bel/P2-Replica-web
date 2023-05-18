@@ -85,17 +85,20 @@ button:active {
 
 /* style for MAIN */
 
+.base-container {
+  padding: 40px 30px;
+}
+
 /* style for PART 0 - WELCOME page */
 #welcome {
   padding-top: 120px;
-  padding: 120px 30px 40px 30px;
 }
 
-.green-diamond-shape {
+#green-diamond-shape {
   width: 15px;
 }
 
-.yellow-circle-shape {
+#yellow-circle-shape {
   width: 25px;
   float: right;
 }
@@ -155,6 +158,53 @@ h1 {
   object-position: center;
 }
 
+.mobile-shadow:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 100%;
+  height: 10px;
+  
+  background-image: radial-gradient(ellipse, rgba(0,0,0,0.35) 35%, rgb(255,255,255) 80%);
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.mobile-shadow:hover {
+  /* Mueve la caja hacia arriba */
+     transform: translateY(-5px);
+     animation: move-box 1.5s infinite;
+}
+
+
+@keyframes move-box {
+  
+  50% {
+    transform: translateY(6px);
+  }
+  
+  
+}
+
+
+.mobile-shadow:hover:before {
+   /* Mueve la sombra hacia abajo y hace aprecer la sombra (previamente camuflada por transparencia) */
+    top: 105%;
+    opacity: 0.4;
+    animation: mobile-shadow 1.5s infinite;
+}
+
+@keyframes mobile-shadow {
+  
+  50% {
+    
+     transform: translateY(-5px);
+     opacity: 1;
+  }
+   
+}
+
 /* style for FUNCTION icons */
 
 #container-functions {
@@ -165,39 +215,30 @@ h1 {
   padding-bottom: 40px;
 }
 
-#situation-icon {
+.round-icon {
   width: 80px;
   padding: 20px;
-  background-color: #daf4ef;
   border-radius: 50%;
+
+}
+#situation-icon {
+  background-color: #daf4ef;
 }
 
 #identify-icon {
-  width: 80px;
-  padding: 20px;
   background-color: #ebe7fa;
-  border-radius: 50%;
 }
 
 #tasks-icon {
-  width: 80px;
-  padding: 20px;
   background-color: #f8e5ea;
-  border-radius: 50%;
 }
 
 #social-icon {
-  width: 80px;
-  padding: 20px;
   background-color: #f8f1de;
-  border-radius: 50%;
 }
 
 #get-icon {
-  width: 80px;
-  padding: 20px;
   background-color: #e1f2fa;
-  border-radius: 50%;
 }
 
 .function-item {
@@ -210,10 +251,45 @@ h1 {
   gap: 20px;
 }
 
+.bounce:hover {
+ 
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+ 
+}
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes bounce {
+  
+/* Colocando un keyframe con el valor translate en 0 al 20%, conseguimos que la transición se tenga que hacer en menos tiempo, lo que acelera el mo vimiento hacia arriba */
+  
+  20%, 40%, 60%, 80% {
+    transform: translateY(0px);
+  } 
+  
+  30% {
+    transform: translateY(-150px);
+  } 
+  
+  50% {
+    transform: translateY(-100px);
+  } 
+  
+  70% {
+    transform: translateY(-40px);
+  } 
+  
+  90% {
+    transform: translateY(-20px);
+  } 
+  
+}
+
 /* style for PART 1 - DESCRIPTION */
 
 #description {
-  padding: 40px 0 40px 0;
+  padding:30px 0 0 0;
 }
 #container-organize-time {
   display: flex;
@@ -417,15 +493,14 @@ h3 {
 #blue-circle-shape-bottom {
   width: 70px;
   z-index:-1;
-  float:right;
-  margin-top:
-  margin-right:60px;
+  float:left;
+  
 }
 
 #green-diamond-bottom {
   width: 15px;
   z-index:-1;
-  float: right;
+  float:right;
 }
 
 #iphone-bottom {
