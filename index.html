@@ -23,12 +23,12 @@
         </nav>
     </header>
     <main>
-        <section class="welcome">
+        <section id="welcome">
             <div class="container-one-intro">  
                 <img class="green-diamond-shape" src="./images/decorative-green-diamond.svg" alt="green diamond shape">
                 <img class="yellow-circle-shape" src="./images/decorative-yellow-circle.svg" alt="yellow circle shape">
                 <div id="intro-text">
-                    <span class="h1">Mobile App Landing Page<span>
+                    <h1>Mobile App Landing Page</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed eos quis facilis error natus deserunt excepturi porro laboriosam rerum. Accusantium fuga magni obcaecati dolores dolor dolore est quae soluta.</p>
                 </div>
                 <div class="app-buttons">
@@ -43,7 +43,7 @@
                 </div>
                 <img class="blue-circle-shape" src="./images/decorative-blue-circle.svg" alt="blue circle shape">
             </div>
-            <article class="container-two-mobile">
+            <article class="container-mobile">
                 <img id="purple-iphone" src="images/header-iphone.png" alt="Image of a purple iphone">
             </article>
             <article id="container-functions">
@@ -87,16 +87,19 @@
             </article>
             <article class="container-schedule">
                 <div id="schedule-tasks">
-                    <button id="button-schedule">
-                        <img class="icon-calendar" src="images/icon-schedule.png"> Schedule</button>
-                    <button id="button-tracking">
-                        <img class="icon-calendar" src="images/icon-tracking.png"> Tracking</button>
-                    <button id="button-organize">
-                        <img class="icon-calendar" src="images/icon-organize.png"> Organize</button>
-
+                    <div id="schedule-buttons">
+                        <button id="button-schedule">
+                            <img class="icon-calendar" src="images/icon-schedule.png">Schedule</button>
+                        <button id="button-tracking">
+                            <img class="icon-calendar" src="images/icon-tracking.png">Tracking</button>
+                        <button id="button-organize">
+                            <img class="icon-calendar" src="images/icon-organize.png">Organize</button>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto deleniti sunt amet ad. Placeat est nobis alias cupiditate ipsa vitae commodi exercitationem voluptas, provident sint! Explicabo ex repudiandae dolorum beatae?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vel nulla nobis illum provident inventore optio modi delectus, ad est culpa minus numquam nam deleniti nihil aut, doloribus eius facilis?</p>
-                    <button class="download-button">TERMS</button>
-                    <button class="download-button-privacy">PRIVACY</button>
+                    <div id="term-privacy-buttons">
+                        <button class="download-button-terms">TERMS</button>
+                        <button class="download-button-privacy">PRIVACY</button>
+                    </div>
                 </div>
                 <img id="calendar" src="./images/description-2-app.png" alt="">
 
@@ -107,7 +110,7 @@
             <article class="container-user-testimonials">
                 <h3 id="heading-testimonials">User Testimonials</h3>
                 <div id="testimonials-body">
-                    <div class="container-testimonials-part-one">
+                    <div class="container-testimonials">
                         <div class="testimonial">
                             <img id="icon-stars" src="./images/five-stars-icon.png" alt="">
                             <div class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero ea voluptatem cupiditate at veniam nemo, saepe ipsa asperiores quibusdam eveniet fugit sed. Esse aliquam, voluptate deleniti at perspiciatis recusandae.</div>
@@ -131,7 +134,7 @@
                         <img class="customer-logo" src="./images/customer-logo-4.png">
                         <img class="customer-logo" src="./images/customer-logo-5.png">
                     </div>
-                    <div class="container-7-testimonials-part-two">
+                    <div class="container-testimonials">
                         <div class="testimonial">
                             <img id="icon-stars" src="./images/five-stars-icon.png" alt="">
                             <div class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero ea voluptatem cupiditate at veniam nemo, saepe ipsa asperiores quibusdam eveniet fugit sed. Esse aliquam, voluptate deleniti at perspiciatis recusandae.</div>
@@ -152,35 +155,36 @@
             </article>
             <article class="container-counter">
                 <div class="counter-item">
-                    <img src="./images/identify-goals.png" alt="">
+                    <img class="counter-image" src="./images/identify-goals.png" alt="">
                     <div class="counter-number">231</div>
                     <div class="counter-category">Happy Users</div>
                 </div>
                 <div class="counter-item">
-                    <img src="./images/identify-goals.png" alt="">
+                    <img class="counter-image" src="./images/situation-analysis.png" alt="">
                     <div class="counter-number">231</div>
                     <div class="counter-category">Happy Users</div>
                 </div>
                 <div class="counter-item">
-                    <img src="./images/identify-goals.png" alt="">
+                    <img class="counter-image" src="./images/task-settings.png" alt="">
                     <div class="counter-number">231</div>
                     <div class="counter-category">Happy Users</div>
                 </div>
                 <div class="counter-item">
-                    <img src="./images/identify-goals.png" alt="">
+                    <img class="counter-image" src="./images/social-interaction.png" alt="">
                     <div class="counter-number">231</div>
                     <div class="counter-category">Happy Users</div>
                 </div>
                 <div class="counter-item">
-                    <img src="./images/identify-goals.png" alt="">
+                    <img class="counter-image" src="./images/get-things-done.png" alt="">
                     <div class="counter-number">231</div>
                     <div class="counter-category">Happy Users</div>
                 </div>
             </article>
             <article class="container-end">
-                <img class="yellow-circle-shape-bottom" src="/images/decorative-yellow-circle.svg" alt="yellow circle shape">
-                <img class="iphone-bottom" src="/images/download-iphone.png" alt="Image of an purple iphone">
-                <img class="blue-circle-shape-bottom" src="/images/decorative-blue-circle.svg" alt="blue circle shape">
+                <img id="yellow-circle-shape-bottom" src="./images/decorative-yellow-circle.svg" alt="yellow circle shape">
+                <img id="iphone-bottom" src="./images/download-iphone.png" alt="Image of an purple iphone">
+                <img id="blue-circle-shape-bottom" src="./images/decorative-blue-circle.svg" alt="blue circle shape">
+                <img id="green-diamond-bottom" src="./images/decorative-green-diamond.svg">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in officiis nemo reiciendis beatae cum delectus reprehenderit vero quos fugiat eveniet autem, laborum consequatur nesciunt eaque eligendi at esse repudiandae.</p>
                 <div class="app-buttons">
                     <button class="download-button">
@@ -194,13 +198,46 @@
                 </div>
             </article>
         </section>
+        
     </main>
     <footer>
-        <div>Contact Info</div>
-        <div>Value Links</div>
-        <div>Other Apps</div>
-        <div class="social-media-icons"></div>
-        <div class="copywright"></div>
+        <section id="menu-footer">
+            <div class="menu-list">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>22 Innovation Street, CA, US</li>
+                    <li>office@sicmobile.com</li>
+                    <li>+44 999 999 999</li>
+                </ul>
+
+            </div>
+             <div class="menu-list">
+                <h4>Value Links</h4>
+                <ul>
+                    <li>Terms&Conditions</li>
+                    <li>Terms&Conditions</li>
+                    <li>Terms&Conditions</li>
+                </ul>
+
+            </div>
+             <div class="menu-list">
+                <h4>Other Apps</h4>
+                <ul>
+                    <li>Scientific Calculator</li>
+                    <li>Scientific Calculator</li>
+                    <li>Scientific Calculator</li>
+                </ul>
+            </div>
+            <div class="social-media-icons">
+                <img src="./images/icon-fb.png" alt="">
+                <img src="./images/icon-insta.png" alt="">
+                <img src="./images/icon-pin.png" alt="">
+                <img src="./images/icon-twitter.png" alt="">
+            </div>
+        </section>
+        <section id="copyright">
+            Copyright <img id="icon-copy" src="./images/icon-copy.png"> Inovatik - All Rights Reserved
+        </section>
     </footer>
 </body>
 </html>

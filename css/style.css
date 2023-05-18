@@ -7,6 +7,7 @@
 }
 body {
   margin-top: 0;
+  color: #848484;
 }
 
 p {
@@ -15,7 +16,7 @@ p {
   line-height: 1.8;
 }
 
-/* styles for header  */
+/* styles for HEADER  */
 .header {
   display: flex;
   width: 100%;
@@ -24,6 +25,7 @@ p {
   background-color: white;
   position: fixed;
   top: 0;
+  box-shadow: 0 1px 4px #92a1b026;
 }
 
 .logo {
@@ -42,11 +44,13 @@ p {
 .menu {
   font-size: 10px;
   display: inline-block;
+  
 }
 
 .menu-item {
   display: inline;
   padding: 0 20px 0 20px;
+  color:black;
 }
 
 .download-button-white {
@@ -68,8 +72,10 @@ p {
   cursor: pointer;
 }
 
-/* style for welcome page */
-.welcome {
+/* style for MAIN */
+
+/* style for PART 0 - WELCOME page */
+#welcome {
   padding-top: 120px;
   padding: 120px 30px 40px 30px;
 }
@@ -87,11 +93,11 @@ p {
   padding: 50px 200px 10px 200px;
 }
 
-.h1 {
-  display: block;
+h1 {
   text-align: center;
   font-size: 65px;
   font-weight: bold;
+  color:black;
 }
 
 .app-buttons {
@@ -105,6 +111,9 @@ p {
   width: 20%;
 }
 .download-button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   font-weight: bold;
   background-color: #ff556e;
@@ -121,7 +130,7 @@ p {
 }
 
 
-.container-two-mobile {
+.container-mobile {
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -134,6 +143,8 @@ p {
   display: block;
   object-position: center;
 }
+
+/* style for FUNCTION icons */
 
 #container-functions {
   display: flex;
@@ -188,47 +199,61 @@ p {
   gap: 20px;
 }
 
-/* style for description */
+/* style for PART 1 - DESCRIPTION */
 
 #description {
   padding: 40px 0 40px 0;
 }
 #container-organize-time {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content:center;
   background-color: #f7fafd;
   padding: 80px 0 80px 0;
 }
 #organize-print-screens {
-  max-width: 40%;
+  width: 550px;
+  height: auto;
+  
 }
 
 #organize-text {
-  max-width: 40%;
+  width: 450px;
 }
 
 h3 {
   font-size: 40px;
+  color:black;
 }
 #calendar {
-  max-width: 40%;
+  width: 550px;
   
 }
 #schedule-tasks {
- max-width:40%;
+ width:450px;
 }
 
 .container-schedule {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #E8EFF6;
-  padding: 80px 0 80px 0;
+  padding: 80px 30px;
 }
 .icon-calendar {
     width: 16%;
 }
 
+#schedule-buttons {
+  display:flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
 #button-schedule {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
     background-color:#9A67E7;
     color: white;
     font-weight: bold;
@@ -239,6 +264,10 @@ h3 {
 }
 
 #button-tracking {
+  display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
     background-color:#F7FAFD;
     color:#848484 ;
     font-weight: bold;
@@ -248,15 +277,35 @@ h3 {
     text-align: center;
 }
 #button-organize {
-    background-color:#F7FAFD;
-    color:#848484 ;
-    font-weight: bold;
-    border: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px; 
+  background-color:#F7FAFD;
+  color:#848484 ;
+  font-weight: bold;
+  border: none;
     border-radius: 3px;
     padding:4px 5px 4px 5px;
     text-align: center;
 }
 
+#terms-privacy-buttons {
+  display: flex;
+  
+
+}
+.download-button-terms {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff556e;
+  color: white;
+  border-style: solid;
+  border-color:#ff556e;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  gap: 4px;
+}
 .download-button-privacy {
     font-size: 14px;
   font-weight: bold;
@@ -278,4 +327,141 @@ h3 {
 #heading-testimonials {
     text-align: center;
 
+}
+.container-user-testimonials {
+  padding-top:30px;
+}
+.testimonial {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+}
+
+#icon-stars {
+  width: 100px;
+  flex-wrap:wrap;
+}
+.testimonial-text {
+  padding: 10%;
+  font-style: italic;
+  
+}
+.customer-name {
+  font-weight: bold;
+  color: black;
+}
+.container-testimonials {
+  display:flex;
+  justify-content: center;
+  padding: 30px
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding: 30px 40px;
+  background-color: white;
+  margin: 30px 40px
+  
+}
+.customer-logo {
+  padding:15px;
+}
+.container-counter {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap: 35px;
+  padding: 70px 60px;
+  background-color: #E8EFF6;
+}
+
+.counter-item {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.counter-number {
+  font-size: 60px;
+  font-weight:700;
+  color:black;
+}
+.counter-image {
+  height: 50px;
+}
+.counter-category {
+  font-size:14px;
+}
+
+.container-end {
+  padding: 70px 60px;
+}
+#yellow-circle-shape-bottom {
+  width: 30px;
+  z-index:-1;
+}
+
+#blue-circle-shape-bottom {
+  width: 70px;
+  z-index:-1;
+  float:right;
+  margin-top:
+  margin-right:60px;
+}
+
+#green-diamond-bottom {
+  width: 15px;
+  z-index:-1;
+  float: right;
+}
+
+#iphone-bottom {
+  width: 800px;
+  z-index:1;
+}
+
+footer {
+  border-top: solid 1px lightgray;
+}
+#menu-footer {
+  display:flex;
+  justify-content: flex-start;
+  gap:40px;
+  padding: 50px 30px 30px 30px;
+  
+}
+
+ul {
+list-style: none;
+padding-left:0;
+line-height: 2.2;
+
+}
+.menu-list {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  text-align: left;
+  
+}
+h4 {
+  margin-top:0;
+}
+
+li {
+  font-size:12px;
+}
+.social-media-icons {
+  display:flex;
+  align-items:first baseline;
+  gap:5px;
+}
+
+#copyright {
+  text-align:center;
+  font-size:12px;
+  margin-bottom:40px;
 }
